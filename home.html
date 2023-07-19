@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="static/js/countdown.js"></script>
+    <script src="static/js/next_day_countdown.js"></script>
+    <title>Het Bon Voyage</title>
+</head>
+<body>
+    <!-- Main header area -->
+    <section class="header_section">
+        <!-- Navbar -->
+        <section class="navbar" id="mynavbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#countdown">Countdown</a>
+            <a href="#specials">Specials</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </section> 
+        <!-- End of navbar -->
+
+        <!-- Heading Bon-Voyage -->
+        <div class="header">
+            <p>BON<br> VOYAGE</p>
+        </div>
+        <!-- End of heading Bon-Voyage -->
+
+        <!-- Countdown to 23 july -->
+        <div class="countdown" id="countdown">
+            <div id="days"></div>
+            <div id="hrs"></div>
+            <div id="mins"></div>
+            <div id="secs"></div>
+        </div>
+        <!-- End of countdown to 23 july -->
+    </section>
+    <!-- End of main header section -->
+
+    <!-- Specials section -->
+    <section class="specials" id="specials">
+        <br><br>
+        
+        <!-- 4 Days to go -->
+        <div class="row">
+            <div class="column">
+                <!-- https://drive.google.com/file/d/1Y_imY6dFBTAWgxRjetUSU0qq_6AQ2jur/view?usp=drive_link -->
+                <img src="https://drive.google.com/uc?export=view&id=1Y_imY6dFBTAWgxRjetUSU0qq_6AQ2jur">
+                <p class="context">4th January, 2021</p>
+
+                <audio controls = 'controls'>
+                    <source src='./static/music/woh din.mp3' type= 'audio/mp3'>
+                </audio>
+                
+            </div>
+            
+            <div class="column">
+                <div class="column_text">
+                    <h1>4 Days To Go!</h1>
+                    <h2>Chapter 1: Memories</h2>
+                        <p>
+                            How quickly does time fly? Not long ago, I was sitting with you on the same freaking bench and playing 
+                            Pictionary to drive away boredom caused by that math sir or having snacks opposite the Shopper’s Point building 
+                            or having maggi in Cama or walking to Juhu from there🙃. Feels so weird thinking that it's been a whole 4 years 
+                            since the last time we did any of 😢. Though there’s no point in walking to Juhu from Andheri😂, except that, I 
+                            would do anything to live those days back. To quote Naina from YJHD "Yaadein mithai ke dabbe ki tarah hoti hai, 
+                            ek baar khula toh sirf ek tukda nahi khaa paoge" and this is exactly what I am feeling rn. I can’t write a 
+                            specific memory as it would be unfair to the rest of them. Talking about unfairness, we can’t miss out on the 
+                            memories we made outside of Pace, well I meant after we left it cuz we didn’t really make any outside when we 
+                            were in Pace cuz “studies”💀. The dry spell continues till this day, I wonder why?🤔. Whether it is constantly 
+                            roasting Aryan and Vishal, or us having our tea time about each other’s college life, these are memories to me 
+                            whatsoever, and the best ones might I add😍. They will always stick with me no matter what and will be equally 
+                            cherished. We may have talked less in the past years, but guess what, it turned out to be a trial period for the 
+                            coming years😜. On a serious note, I am sorry if that has been considered a bad factor for our friendship, but 
+                            the way I see it, it has in no-way broken our bond. I still see you as the Het I interacted with 6 years back😘. 
+                            It rather has only strengthened it, these memories made us come back to each other in the past 4 years and I am 
+                            sure that they are more than enough to continue to, even though you’ll be miles apart this time😭😭😭. 
+                            Congratulations on making it to F-ing “USC”!!!!!🥳. Couldn’t have been more proud😘.Here’s to the start of a 
+                            beautiful chapter and a somewhat end of one, but you always go back to your favorite books and ik I am one of them! 🤭
+                            <p class="regards">
+                                Will miss you loads,
+                                <br>Teja❤️
+                            </p> 
+                        </p>   
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <!-- End of 4 days to go -->
+
+        <!-- Countdown for next day row -->
+        <div class="row">
+            <div class="countdown_for_next_day">
+                <h1>The next letter will be out in:</h1>
+                <br>
+                <p id="countdown_for_next_day"></p>
+            </div>
+        </div>
+        <!-- End of countdown for next day -->
+
+        <!-- 3 Days to go -->
+        <!-- <div class="row">
+            <div class="column">
+                <div class="column_text">
+                    <h2>3 Days To Go!</h2>
+                    <p>
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the 
+                        visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a 
+                        placeholder before final copy is available. It is also used to temporarily replace text in a process called 
+                        greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the 
+                        text influencing the design.Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 
+                        1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to 
+                        make it nonsensical and improper Latin. The first two words themselves are a truncation of 'dolorem ipsum' 
+                        ('pain itself').
+                        Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized 
+                        by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, 
+                        when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. 
+                        Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have 
+                        many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as 
+                        Semantic UI.[
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <img src="./static/img/Het/IMG-20230531-WA0009.jpg">
+            </div>
+        </div> -->
+        <!-- End of 3 days to go -->
+
+        <!-- 2 days to go -->
+        <!-- <div class="row">
+            <div class="column">
+                <img src="./static/img/Het/IMG-20230416-WA0034.jpg">
+            </div>
+            
+            <div class="column">
+                <div class="column_text">
+                    <h2>2 Days To Go!</h2>
+                    <p>
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the 
+                        visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a 
+                        placeholder before final copy is available. It is also used to temporarily replace text in a process called 
+                        greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the 
+                        text influencing the design.Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 
+                        1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to 
+                        make it nonsensical and improper Latin. The first two words themselves are a truncation of 'dolorem ipsum' 
+                        ('pain itself').
+                        Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized 
+                        by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, 
+                        when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. 
+                        Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have 
+                        many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as 
+                        Semantic UI.[
+                    </p>
+                </div>
+            </div>
+        </div> -->
+        <!-- End of 2 days to go -->
+
+        <!-- 1 Day to go -->
+        <!-- <div class="row">
+            <div class="column">
+                <div class="column_text">
+                    <h2>1 Day To Go!</h2>
+                    <p>
+                        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the 
+                        visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a 
+                        placeholder before final copy is available. It is also used to temporarily replace text in a process called 
+                        greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the 
+                        text influencing the design.Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 
+                        1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to 
+                        make it nonsensical and improper Latin. The first two words themselves are a truncation of 'dolorem ipsum' 
+                        ('pain itself').
+                        Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized 
+                        by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital world in the mid-1980s, 
+                        when Aldus employed it in graphic and word-processing templates for its desktop publishing program PageMaker. 
+                        Other popular word processors, including Pages and Microsoft Word, have since adopted Lorem ipsum,[2] as have 
+                        many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as 
+                        Semantic UI.[
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <img src="./static/img/Het/IMG-20220322-WA0075.jpg">
+            </div>
+        </div> -->
+        <!-- End of 1 day to go -->
+    </section>
+    <!-- End of specials section -->
+
+
+    <!-- Scroll to top button -->
+    <div class="scroll_btn">
+        <img id="scroll_up" onclick="scroll_to_top()" src="./static/img/scroll_up.png"></img>
+    </div>
+    <!-- End of scroll to top button -->
+
+
+    <!-- Script -->
+    <script>
+        // Script for responsive navbar
+        function myFunction() {
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+        // Script to scroll up to top
+        function scroll_to_top() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- End of script -->
+    
+</body>
+</html>

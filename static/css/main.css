@@ -1,0 +1,308 @@
+/* color palatte: 
+F31559 - red, 
+FF52A2 - pink, 
+FFB07F - orange/ochre, 
+FFECAF - yellow
+background - https://ktla.com/wp-content/uploads/sites/4/2020/08/GettyImages-1206596174.jpg 
+smaller heading: font-family: 'Noto Serif Khitan Small Script', sans-serif;
+inside content: font-family: 'Instrument Serif', serif;
+aesthetic colors
+F7F3EE - border
+F1EDE8 - section
+261300 - heading text color
+927B59 - section text color
+755B33 - button
+F1F1F1 - grey background
+*/
+
+/* body */
+body, html{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    cursor: url('../img/plane.png'), auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+    overflow: hidden;
+}
+
+.navbar img{
+    padding: 3px;
+    height: 80%;
+} 
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: #FFB07F;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 2%;
+}
+  
+.navbar a:hover {
+    color: black;
+    cursor: url('../img/plane.png'), auto;
+}
+  
+.navbar .icon {
+    display: none;
+}
+  
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+/* end of Navbar */
+
+
+/* header section */
+.header_section{
+    background-image: url("../img/background.gif");
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+    margin: 0;
+    height: 100vh;
+}
+
+.header p{
+    color: #FFECAF;
+    padding: 0%;
+    margin: 0%;
+    font-size: 800%;
+    background-color: rgba(0,0,0, 0.4); 
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    z-index: 2; 
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+@media screen and (max-width: 600px) {
+    .header p{
+        font-size: 400%;
+        left: 20%;
+        width: 65%;
+        top: 50%;
+    }
+}
+
+/* Countdown section in header */
+.countdown div{
+    padding: 0%;
+    margin: 0%;
+    font-size: 400%;
+    color: #FFECAF;
+    position: absolute;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#days{
+    top: 60%;
+    left: 8%;
+}
+
+#hrs{
+    top: 30%;
+    left: 23%;
+}
+
+#mins{
+    top: 21%;
+    left: 54%;
+}
+
+#secs{
+    top: 12%;
+    left: 77%;
+}
+
+@media screen and (max-width: 600px) {
+    .countdown div{
+        font-size: 200%;
+    }
+
+    #days{
+        top: 63%;
+    }
+    
+    #hrs{
+        top: 33%;
+    }
+    
+    #mins{
+        top: 24%;
+    }
+    
+    #secs{
+        top: 15%;
+    }
+}
+/* end of countdown section in header */
+/* end of header section */
+
+
+
+/* specials */
+.specials{
+    padding: 2%;
+}
+
+.row{
+    border-radius: 2px;
+}
+
+.row{
+    z-index: 10;
+    border-color: #333;
+    border: #333;
+    margin: 2%;
+}
+
+.row:hover{
+    z-index: 2;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column img{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 8%;
+}
+
+.column div{
+    padding: 10%;
+}
+
+.column_text h1{
+    font-family: 'Noto Serif Khitan Small Script', sans-serif;
+    font-size: 300%;
+}
+
+.column_text h2{
+    font-family: 'Noto Serif Khitan Small Script', sans-serif;
+    font-size: 200%;
+}
+
+.column_text p{
+    text-align: justify;
+    font-family: 'Instrument Serif', serif;
+    font-size: 140%;
+}
+
+.context{
+    font-size: 300%;
+    margin-left: 20%;
+}
+
+.regards{
+    margin-left: 60%;
+}
+
+audio{
+    width: 60%;
+    margin-left: 16%;
+}
+
+.column img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    border-color: #333;
+    border: #333;
+}
+
+.row:nth-of-type(2n+1) {
+    background-color: white;
+}
+
+.row:nth-of-type(2n+2) {
+    background-color: #F31559;
+    color: white;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+
+/* end of specials */
+
+
+/* Countdown for coming days */
+.countdown_for_next_day{
+    padding: 3%;
+    text-align: center;
+}
+
+.countdown_for_next_day h1{
+    font-size: 200%;
+}
+
+#countdown_for_next_day{
+    font-size: 300%;
+}
+/* end of countdown for coming days */
+
+
+/* Scroll up button */
+.scroll_btn img{
+    position: fixed;
+    bottom: 1%;
+    right: 1px;
+    padding: 0%;
+    margin: 0%;
+    border: 0;
+    color: #FFB07F;
+}
+/* end of scroll up button */
+

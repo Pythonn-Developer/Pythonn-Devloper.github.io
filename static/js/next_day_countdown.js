@@ -22,6 +22,6 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("d_day").innerHTML = "D-Day";
+    document.getElementById("countdown_for_next_day").innerHTML = "Will be out shortly";
   }
 }, 1000);

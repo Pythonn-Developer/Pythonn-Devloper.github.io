@@ -1,4 +1,4 @@
-var countDownDate1 = new Date("July 21, 2023 11:00:25").getTime();
+var countDownDate1 = new Date("July 22, 2023 13:00:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -20,7 +20,7 @@ var x = setInterval(function() {
   seconds1 + " Seconds"; 
     
   // If the count down is over, write some text 
-  if (distance < 0) {
+  if (minutes1 < 0) {
     clearInterval(x);
     document.getElementById("countdown_for_next_day").innerHTML = "Will be out shortly";
   }
